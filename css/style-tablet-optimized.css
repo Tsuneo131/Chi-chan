@@ -1,0 +1,494 @@
+/* ========================================
+   Tablet Optimization (768px - 1024px)
+   タブレット幅専用の最適化CSS
+   ======================================== */
+
+/* タブレット幅での基本調整 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    /* ========================================
+       Navigation - ヘッダー最適化
+       ======================================== */
+    .nav-container {
+        padding: 0 24px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        gap: 16px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+
+    .nav-link-cta {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    /* セクション全体の余白調整 */
+    section {
+        padding: 70px 0;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    /* ========================================
+       Hero Section - ファーストビュー最適化
+       ======================================== */
+    .hero {
+        min-height: 90vh;
+        padding: 120px 40px 80px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        margin-bottom: 0;
+        order: 1;
+        text-transform: none;
+        margin-top: 24px;
+    }
+
+    .hero-title {
+        font-size: 52px;
+        line-height: 1.4;
+        margin-bottom: 32px;
+        order: 0;
+    }
+
+    .hero-description {
+        font-size: 19px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+    }
+
+    .hero-cta {
+        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        order: 3;
+    }
+
+    .btn {
+        padding: 16px 36px;
+        font-size: 16px;
+        min-width: 240px;
+    }
+
+    /* ========================================
+       Section Headers - 見出しの調整
+       ======================================== */
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-title {
+        font-size: 38px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    /* ========================================
+       Profile Intro Section
+       ======================================== */
+    .profile-intro {
+        padding: 60px 0;
+    }
+
+    .profile-intro-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        padding: 45px 40px;
+        max-width: 800px;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+        flex-shrink: 0;
+    }
+
+    .profile-intro-text {
+        text-align: left;
+    }
+
+    .profile-greeting {
+        font-size: 21px;
+        margin-bottom: 16px;
+    }
+
+    .profile-message {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    /* ========================================
+       Sympathy Section
+       ======================================== */
+    .sympathy-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .sympathy-item {
+        padding: 35px 30px;
+        min-height: 140px;
+    }
+
+    .sympathy-number {
+        font-size: 42px;
+    }
+
+    .sympathy-text {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .sympathy-message {
+        padding: 40px 36px;
+        max-width: 700px;
+    }
+
+    .sympathy-message p {
+        font-size: 17px;
+        line-height: 1.9;
+    }
+
+    .sympathy-warning {
+        margin-top: 24px;
+        padding: 18px 26px;
+        font-size: 16px;
+    }
+
+    .sympathy-result {
+        margin-top: 28px;
+        padding-top: 28px;
+        font-size: 16px;
+    }
+
+    /* ========================================
+       About Section
+       ======================================== */
+    .about-intro {
+        margin-bottom: 50px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-greeting {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .about-photo,
+    .about-photo-work {
+        margin: 50px auto;
+        max-width: 700px;
+    }
+
+    .about-photo img,
+    .about-photo-work img {
+        border-radius: 16px;
+    }
+
+    /* Values Section */
+    .values {
+        padding: 45px 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .values-title {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .values-intro {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .value-item {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .values-goal p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .values-mission {
+        font-size: 17px;
+    }
+
+    /* ========================================
+       Fit Section
+       ======================================== */
+    .fit-content {
+        max-width: 800px;
+    }
+
+    .fit-box {
+        padding: 40px 36px;
+    }
+
+    .fit-title {
+        font-size: 21px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+
+    .fit-list li {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 14px 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .fit-good .fit-list li:before,
+    .fit-not .fit-list li:before {
+        font-size: 20px;
+        line-height: 1;
+        height: 25.6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        margin: 0;
+    }
+
+    .fit-message {
+        padding: 40px 36px;
+    }
+
+    .fit-message p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    /* ========================================
+       Accounts, Results, Services Grid
+       ======================================== */
+    .accounts-grid,
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    .account-card,
+    .result-card,
+    .service-card {
+        padding: 36px 28px;
+    }
+
+    .service-title {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .service-desc {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .result-title {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .result-description {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .metric-number {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .services-intro {
+        max-width: 650px;
+        padding: 40px 32px;
+    }
+
+    .services-tagline {
+        font-size: 19px;
+        line-height: 1.8;
+    }
+
+    /* ========================================
+       Contact Section
+       ======================================== */
+    .contact {
+        padding: 70px 0;
+    }
+
+    .contact-photo-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .contact-photo-text {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact-content {
+        max-width: 650px;
+    }
+
+    .contact-intro {
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 24px;
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+        margin-top: 45px;
+    }
+
+    .contact-button {
+        padding: 40px 28px;
+    }
+
+    /* ========================================
+       Final Message Section
+       ======================================== */
+    .final-message {
+        padding: 80px 0;
+    }
+
+    .message-content {
+        max-width: 700px;
+    }
+
+    .message-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .message-text {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 24px;
+    }
+
+    .message-signature {
+        font-size: 23px;
+        margin-top: 45px;
+    }
+}
+
+/* ========================================
+   Small Tablet Adjustments (769px - 900px)
+   ======================================== */
+@media (min-width: 769px) and (max-width: 900px) {
+    
+    /* ナビゲーションをさらにコンパクトに */
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .nav-link-cta {
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .accounts-grid,
+    .results-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* ========================================
+   Very Small Tablet (769px - 850px)
+   ナビゲーションテキストをさらに短縮
+   ======================================== */
+@media (min-width: 769px) and (max-width: 850px) {
+    
+    .nav-menu {
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .nav-link-cta {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+}
