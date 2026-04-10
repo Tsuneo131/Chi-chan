@@ -3,11 +3,13 @@
    スマートフォン閲覧最適化追加CSS
    ======================================== */
 
-/* スマホでの基本設定の改善 */
+/* スマホでの基本設定 */
 @media only screen and (max-width: 768px) {
     body {
-        line-height: 1.9;
         font-size: 16px;
+        line-height: 1.8;
+        word-break: normal;
+        overflow-wrap: anywhere;
     }
 
     /* Hero Section - 表示順序の調整 */
@@ -22,7 +24,7 @@
         order: 1;
         margin-bottom: 0;
         margin-top: 20px;
-        font-size: 13px;
+        font-size: 14px;
         letter-spacing: 1px;
         text-transform: none;
     }
@@ -35,49 +37,50 @@
     .hero-description {
         order: 2;
         margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.8;
     }
 
     .hero-cta {
         order: 3;
     }
 
-    /* セクション間の余白を減らしてスクロール負担軽減 */
+    /* セクション間の余白 */
     section {
         padding: 50px 0;
     }
 
-    /* ボタンのフォントサイズとパディング調整 */
+    /* ボタン */
     .btn {
-        font-size: 15px;
-        padding: 14px 32px;
+        font-size: clamp(14px, 4vw, 17px);
+        padding: 16px 36px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        min-width: 220px;
     }
 
     .container {
         padding: 0 16px;
     }
 
-    /* 見出しのサイズと行間を最適化 */
+    /* ========== 見出し ========== */
     .section-header {
-        margin-bottom: 40px;
+        margin-bottom: 48px;
     }
 
     .section-title {
-        font-size: 26px;
-        line-height: 1.6;
-        margin-bottom: 12px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 16px;
     }
 
     .section-subtitle {
-        font-size: 13px;
+        font-size: 15px;
         letter-spacing: 1px;
     }
 
-    /* プロフィール紹介セクション */
+    /* ========== プロフィールセクション ========== */
     .profile-intro {
         padding: 50px 0;
     }
@@ -96,41 +99,35 @@
     }
 
     .profile-name {
-        font-size: 24px;
-        margin-bottom: 8px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 26px;
+        margin-bottom: 10px;
     }
 
     .profile-title {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 20px;
         padding-bottom: 14px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .profile-greeting {
-        font-size: 19px;
-        line-height: 1.7;
-        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 24px;
     }
 
     .profile-message {
-        font-size: 15px;
-        line-height: 1.85;
-        margin-bottom: 14px;
-        word-break: normal;
-        overflow-wrap: break-word;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 16px;
     }
 
     .profile-conclusion {
-        font-size: 16px;
-        margin-top: 20px;
-        padding-top: 16px;
+        font-size: 17px;
+        margin-top: 24px;
+        padding-top: 20px;
     }
 
-    /* 共感セクション - スマホで1カラム表示 */
+    /* ========== 共感セクション ========== */
     .sympathy-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -148,8 +145,6 @@
     .sympathy-text {
         font-size: 16px;
         line-height: 1.8;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .sympathy-message {
@@ -159,21 +154,19 @@
 
     .sympathy-message p {
         font-size: 16px;
-        line-height: 1.9;
+        line-height: 1.8;
         margin-bottom: 20px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .sympathy-emphasis {
-        font-size: 17px !important;
-        line-height: 1.85 !important;
+        font-size: 18px !important;
+        line-height: 1.8 !important;
         margin: 28px 0 !important;
     }
 
     .sympathy-conclusion {
-        font-size: 16px !important;
-        line-height: 1.9 !important;
+        font-size: 17px !important;
+        line-height: 1.8 !important;
         margin-top: 32px !important;
         padding-top: 28px;
     }
@@ -193,23 +186,23 @@
     .sympathy-result {
         margin-top: 24px;
         padding-top: 24px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
-    /* Aboutセクション - 写真と文章の余白調整 */
+    /* ========== Aboutセクション ========== */
     .about-intro {
         margin-bottom: 40px;
     }
 
     .about-greeting {
-        font-size: 19px;
+        font-size: 20px;
         line-height: 1.8;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
     }
 
     .about-text {
         font-size: 16px;
-        line-height: 1.9;
+        line-height: 1.8;
         margin-bottom: 20px;
     }
 
@@ -225,25 +218,21 @@
         margin-bottom: 20px;
     }
 
-    /* 価値観セクション */
+    /* ========== 価値観セクション ========== */
     .values {
         padding: 32px 24px;
     }
 
     .values-title {
-        font-size: 22px;
-        margin-bottom: 16px;
-        line-height: 1.6;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 1.5;
     }
 
     .values-intro {
-        font-size: 17px;
+        font-size: 16px;
         margin-bottom: 24px;
         line-height: 1.8;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .values-list {
@@ -252,10 +241,8 @@
 
     .value-item {
         margin-bottom: 24px;
-        font-size: 15px;
-        line-height: 1.9;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 16px;
+        line-height: 1.8;
     }
 
     .value-item i {
@@ -270,36 +257,32 @@
 
     .values-goal p {
         font-size: 16px;
-        line-height: 1.9;
+        line-height: 1.8;
         margin-bottom: 16px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .values-mission {
-        font-size: 17px;
-        line-height: 1.9;
+        font-size: 18px;
+        line-height: 1.8;
         margin-bottom: 12px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
-    /* Fitセクション */
+    /* ========== Fitセクション ========== */
     .fit-box {
         padding: 32px 24px;
         margin-bottom: 24px;
     }
 
     .fit-title {
-        font-size: 20px;
-        line-height: 1.6;
+        font-size: 22px;
+        line-height: 1.5;
         margin-bottom: 20px;
     }
 
     .fit-list li {
         padding: 14px 0;
-        font-size: 15px;
-        line-height: 1.6;
+        font-size: 16px;
+        line-height: 1.8;
         display: flex;
         align-items: flex-start;
         gap: 8px;
@@ -309,19 +292,18 @@
     .fit-not .fit-list li:before {
         font-size: 18px;
         line-height: 1;
-        height: 24px;
+        height: 28.8px;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 18px;
         margin: 0;
+        flex-shrink: 0;
     }
 
     .fit-note {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.8;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .fit-message {
@@ -330,13 +312,11 @@
 
     .fit-message p {
         font-size: 16px;
-        line-height: 1.9;
+        line-height: 1.8;
         margin-bottom: 16px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
-    /* CTAセクション - ボタン周辺の余白を増やす */
+    /* ========== CTAセクション ========== */
     .contact {
         padding: 60px 0;
     }
@@ -353,23 +333,15 @@
 
     .contact-photo-text {
         font-size: 17px;
-        line-height: 1.9;
+        line-height: 1.8;
         padding: 0 24px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
-    }
-
-    .section-header {
-        margin-bottom: 40px;
     }
 
     .contact-intro {
         font-size: 16px;
-        line-height: 1.9;
-        margin-bottom: 20px;
+        line-height: 1.8;
+        margin-bottom: 24px;
         padding: 0 8px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .contact-methods {
@@ -390,34 +362,28 @@
         font-size: 19px;
     }
 
-    /* 最終メッセージセクション */
+    /* ========== 最終メッセージセクション ========== */
     .final-message {
         padding: 70px 0;
     }
 
     .message-title {
-        font-size: 26px;
-        margin-bottom: 28px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 28px;
+        margin-bottom: 32px;
     }
 
     .message-text {
         font-size: 17px;
-        line-height: 1.9;
-        margin-bottom: 20px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        line-height: 1.8;
+        margin-bottom: 24px;
     }
 
     .message-signature {
-        font-size: 22px;
+        font-size: 24px;
         margin-top: 40px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
-    /* 実績・サービスカード */
+    /* ========== 実績・サービスカード ========== */
     .accounts-grid,
     .results-grid,
     .services-grid {
@@ -432,16 +398,14 @@
     }
 
     .result-badge {
-        font-size: 11px !important;
-        padding: 5px 14px !important;
+        font-size: 12px !important;
+        padding: 6px 16px !important;
         margin-bottom: 16px !important;
     }
 
     .result-title {
-        font-size: 18px !important;
+        font-size: 20px !important;
         margin-bottom: 16px !important;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .result-metric {
@@ -450,36 +414,28 @@
     }
 
     .metric-number {
-        font-size: 22px !important;
+        font-size: 24px !important;
         margin-bottom: 6px !important;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .metric-label {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
 
     .result-description {
-        font-size: 14px !important;
-        line-height: 1.75 !important;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 16px !important;
+        line-height: 1.8 !important;
     }
 
     .service-title {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 14px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
         line-height: 1.5;
     }
 
     .service-desc {
-        font-size: 14px;
-        line-height: 1.75;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 16px;
+        line-height: 1.8;
     }
 
     .services-intro {
@@ -493,25 +449,20 @@
     }
 }
 
-/* 更に小さい画面用の最適化 */
+/* 更に小さい画面用の最適化（480px以下） */
 @media only screen and (max-width: 480px) {
-    body {
-        font-size: 15px;
-    }
-
     .btn {
-        font-size: 14px;
-        padding: 13px 28px;
+        font-size: clamp(13px, 3.5vw, 16px);
+        padding: 14px 28px;
+        min-width: 200px;
     }
 
     .section-title {
         font-size: 24px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .profile-intro-content {
-        padding: 30px 8px;
+        padding: 30px 12px;
     }
 
     .profile-photo {
@@ -520,34 +471,15 @@
     }
 
     .profile-name {
-        font-size: 22px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 24px;
     }
 
     .profile-title {
-        font-size: 12px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 13px;
     }
 
     .profile-greeting {
-        font-size: 18px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
-    }
-
-    .profile-message {
-        font-size: 14px;
-        line-height: 1.8;
-        word-break: normal;
-        overflow-wrap: break-word;
-    }
-
-    .profile-conclusion {
-        font-size: 15px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 19px;
     }
 
     .contact-photo-wrapper {
@@ -566,39 +498,16 @@
         font-size: 32px;
     }
 
-    .sympathy-text {
-        font-size: 15px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
-    }
-
     .sympathy-message {
         padding: 32px 16px;
     }
 
-    .sympathy-message p {
-        font-size: 15px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
-    }
-
     .sympathy-emphasis {
-        font-size: 16px !important;
-    }
-
-    .sympathy-conclusion {
-        font-size: 15px !important;
-        padding-top: 24px;
+        font-size: 17px !important;
     }
 
     .sympathy-warning {
         display: none;
-    }
-
-    .about-text {
-        font-size: 15px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .values {
@@ -606,15 +515,7 @@
     }
 
     .values-title {
-        font-size: 20px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
-    }
-
-    .value-item {
-        font-size: 14px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 22px;
     }
 
     .fit-box {
@@ -622,80 +523,35 @@
     }
 
     .fit-title {
-        font-size: 19px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
-    }
-
-    .fit-list li {
-        font-size: 14px;
-        line-height: 1.6;
-        gap: 6px;
-    }
-
-    .fit-good .fit-list li:before,
-    .fit-not .fit-list li:before {
-        font-size: 16px;
-        height: 22.4px;
-        width: 16px;
+        font-size: 20px;
     }
 
     .service-card {
-        padding: 28px 12px !important;
+        padding: 28px 16px !important;
     }
 
     .service-title {
-        font-size: 17px;
-        line-height: 1.4;
-    }
-
-    .service-desc {
-        font-size: 13px;
-        line-height: 1.7;
+        font-size: 18px;
     }
 
     .result-badge {
-        font-size: 10px !important;
-        padding: 4px 12px !important;
+        font-size: 11px !important;
+        padding: 5px 14px !important;
     }
 
     .result-title {
-        font-size: 17px !important;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 18px !important;
     }
 
     .metric-number {
-        font-size: 20px !important;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        font-size: 22px !important;
     }
 
-    .metric-label {
-        font-size: 12px !important;
-    }
-
-    .result-description {
-        font-size: 13px !important;
-        word-break: keep-all;
-        overflow-wrap: break-word;
-    }
-
-    .fit-good .fit-list li:before,
-    .fit-not .fit-list li:before {
-        font-size: 16px;
-        width: 16px;
-    }
-
-    .contact-intro {
-        font-size: 15px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+    .message-title {
+        font-size: 24px;
     }
 
     .message-text {
         font-size: 16px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 }
