@@ -89,11 +89,6 @@
         text-align: center;
     }
 
-    /* プロフィール内のbrタグをスマホでは無効化し、自然に折り返す */
-    .profile-intro-text br:not(.sp-only) {
-        display: none;
-    }
-
     .profile-photo {
         width: 140px;
         height: 140px;
