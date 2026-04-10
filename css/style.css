@@ -558,6 +558,10 @@ section {
     display: none;
 }
 
+.pc-only {
+    display: inline;
+}
+
 /* 古いスタイルを削除用に残す */
 .sympathy-warning {
     display: none;

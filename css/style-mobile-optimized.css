@@ -187,6 +187,10 @@
         display: inline;
     }
 
+    .pc-only {
+        display: none;
+    }
+
     .sympathy-warning {
         display: none;
     }
