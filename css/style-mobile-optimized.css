@@ -12,7 +12,16 @@
         overflow-wrap: anywhere;
     }
 
-    /* Hero Section - 表示順序の調整 */
+    /* ========== 禁則処理 ========== */
+    /* 句読点・助詞が1文字だけ次の行に落ちるのを防ぐ */
+    p, li, .fit-note, .contact-intro, .sympathy-text,
+    .profile-message, .about-text, .value-item,
+    .message-text, .contact-photo-text {
+        line-break: strict;
+        hanging-punctuation: allow-end;
+    }
+
+    /* ========== Hero Section ========== */
     .hero-content {
         display: flex !important;
         flex-direction: column !important;
@@ -45,34 +54,36 @@
         order: 3;
     }
 
-    /* セクション間の余白 */
+    /* ========== セクション共通 ========== */
     section {
         padding: 50px 0;
-    }
-
-    /* ボタン */
-    .btn {
-        font-size: clamp(14px, 4vw, 17px);
-        padding: 16px 36px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        min-width: 220px;
     }
 
     .container {
         padding: 0 16px;
     }
 
-    /* ========== 見出し ========== */
+    /* ボタン — ゆとりのあるパディング */
+    .btn {
+        font-size: clamp(14px, 4vw, 17px);
+        padding: 18px 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 220px;
+        letter-spacing: 0.5px;
+    }
+
+    /* ========== 見出し — セクション区切りを明確に ========== */
     .section-header {
-        margin-bottom: 48px;
+        margin-bottom: 56px;
     }
 
     .section-title {
         font-size: 28px;
-        line-height: 1.5;
-        margin-bottom: 16px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        font-weight: 700;
     }
 
     .section-subtitle {
@@ -101,6 +112,7 @@
     .profile-name {
         font-size: 26px;
         margin-bottom: 10px;
+        font-weight: 700;
     }
 
     .profile-title {
@@ -161,13 +173,14 @@
     .sympathy-emphasis {
         font-size: 18px !important;
         line-height: 1.8 !important;
-        margin: 28px 0 !important;
+        margin: 32px 0 !important;
+        font-weight: 700 !important;
     }
 
     .sympathy-conclusion {
         font-size: 17px !important;
         line-height: 1.8 !important;
-        margin-top: 32px !important;
+        margin-top: 36px !important;
         padding-top: 28px;
     }
 
@@ -191,7 +204,7 @@
 
     /* ========== Aboutセクション ========== */
     .about-intro {
-        margin-bottom: 40px;
+        margin-bottom: 48px;
     }
 
     .about-greeting {
@@ -220,18 +233,19 @@
 
     /* ========== 価値観セクション ========== */
     .values {
-        padding: 32px 24px;
+        padding: 36px 24px;
     }
 
     .values-title {
         font-size: 24px;
-        margin-bottom: 20px;
-        line-height: 1.5;
+        margin-bottom: 24px;
+        line-height: 1.4;
+        font-weight: 700;
     }
 
     .values-intro {
         font-size: 16px;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
         line-height: 1.8;
     }
 
@@ -251,8 +265,8 @@
     }
 
     .values-goal {
-        margin-top: 32px;
-        padding-top: 32px;
+        margin-top: 36px;
+        padding-top: 36px;
     }
 
     .values-goal p {
@@ -264,19 +278,21 @@
     .values-mission {
         font-size: 18px;
         line-height: 1.8;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
+        font-weight: 600;
     }
 
     /* ========== Fitセクション ========== */
     .fit-box {
-        padding: 32px 24px;
-        margin-bottom: 24px;
+        padding: 36px 24px;
+        margin-bottom: 28px;
     }
 
     .fit-title {
         font-size: 22px;
-        line-height: 1.5;
-        margin-bottom: 20px;
+        line-height: 1.4;
+        margin-bottom: 24px;
+        font-weight: 700;
     }
 
     .fit-list li {
@@ -307,7 +323,7 @@
     }
 
     .fit-message {
-        padding: 32px 24px;
+        padding: 36px 24px;
     }
 
     .fit-message p {
@@ -322,13 +338,13 @@
     }
 
     .contact-photo-intro {
-        margin-bottom: 50px;
+        margin-bottom: 56px;
     }
 
     .contact-photo-wrapper {
         width: 150px;
         height: 150px;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
     }
 
     .contact-photo-text {
@@ -340,18 +356,18 @@
     .contact-intro {
         font-size: 16px;
         line-height: 1.8;
-        margin-bottom: 24px;
+        margin-bottom: 28px;
         padding: 0 8px;
     }
 
     .contact-methods {
         grid-template-columns: 1fr;
         gap: 24px;
-        margin-top: 40px;
+        margin-top: 44px;
     }
 
     .contact-button {
-        padding: 36px 24px;
+        padding: 40px 28px;
     }
 
     .contact-button i {
@@ -360,6 +376,7 @@
 
     .contact-button span {
         font-size: 19px;
+        font-weight: 600;
     }
 
     /* ========== 最終メッセージセクション ========== */
@@ -369,7 +386,8 @@
 
     .message-title {
         font-size: 28px;
-        margin-bottom: 32px;
+        margin-bottom: 36px;
+        font-weight: 700;
     }
 
     .message-text {
@@ -380,7 +398,8 @@
 
     .message-signature {
         font-size: 24px;
-        margin-top: 40px;
+        margin-top: 44px;
+        font-weight: 700;
     }
 
     /* ========== 実績・サービスカード ========== */
@@ -394,7 +413,7 @@
     .account-card,
     .result-card,
     .service-card {
-        padding: 32px 16px !important;
+        padding: 32px 20px !important;
     }
 
     .result-badge {
@@ -405,17 +424,19 @@
 
     .result-title {
         font-size: 20px !important;
-        margin-bottom: 16px !important;
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
     }
 
     .result-metric {
         margin: 20px 0 !important;
-        padding: 16px !important;
+        padding: 20px !important;
     }
 
     .metric-number {
         font-size: 24px !important;
-        margin-bottom: 6px !important;
+        margin-bottom: 8px !important;
+        font-weight: 700 !important;
     }
 
     .metric-label {
@@ -429,8 +450,9 @@
 
     .service-title {
         font-size: 20px;
-        margin-bottom: 14px;
+        margin-bottom: 16px;
         line-height: 1.5;
+        font-weight: 700;
     }
 
     .service-desc {
@@ -439,13 +461,40 @@
     }
 
     .services-intro {
-        padding: 32px 16px;
-        margin-bottom: 40px;
+        padding: 36px 20px;
+        margin-bottom: 44px;
     }
 
     .services-tagline {
         font-size: 18px;
         line-height: 1.8;
+        font-weight: 600;
+    }
+
+    /* ========== フッター — 情報優先度を下げる ========== */
+    .footer {
+        padding: 40px 0 24px;
+    }
+
+    .footer-logo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .footer-text {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .social-link {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+        padding-top: 20px;
     }
 }
 
@@ -453,8 +502,12 @@
 @media only screen and (max-width: 480px) {
     .btn {
         font-size: clamp(13px, 3.5vw, 16px);
-        padding: 14px 28px;
+        padding: 16px 32px;
         min-width: 200px;
+    }
+
+    .section-header {
+        margin-bottom: 48px;
     }
 
     .section-title {
@@ -553,5 +606,17 @@
 
     .message-text {
         font-size: 16px;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 11px;
     }
 }
