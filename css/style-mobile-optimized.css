@@ -234,6 +234,7 @@
     /* ========== 価値観セクション ========== */
     .values {
         padding: 36px 24px;
+        overflow: hidden;
     }
 
     .values-title {
@@ -241,6 +242,8 @@
         margin-bottom: 24px;
         line-height: 1.4;
         font-weight: 700;
+        word-break: normal;
+        overflow-wrap: anywhere;
     }
 
     .values-intro {
@@ -257,6 +260,8 @@
         margin-bottom: 24px;
         font-size: 16px;
         line-height: 1.8;
+        word-break: normal;
+        overflow-wrap: anywhere;
     }
 
     .value-item i {
